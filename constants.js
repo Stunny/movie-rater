@@ -1,4 +1,4 @@
 module.exports = Object.freeze({
-  SERVER_ADDRESS : 'https://anticasta-movie-rater.herokuapp.com/',
-  APP_PORT : 80
+  SERVER_ADDRESS : process.env.IP+':'+process.env.PORT,
+  APP_PORT : process.env.PORT
 });
