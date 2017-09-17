@@ -19,6 +19,7 @@ app.use(methodOverride());
 app.use(morgan('dev'));
 app.set('view engine', 'pug');
 app.set("views", path.join(__dirname, "view"));
+app.use('/public', express.static(path.join(__dirname, 'scripts')));
 
 app.use('/api', apiRoutes);
 
