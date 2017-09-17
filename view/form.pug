@@ -10,7 +10,7 @@ head
 body
   h1 Anti-Casta Movie Rater
   form
-    div(class="col-md-4 col-md-offset-4")
+    div(class="col-md-4 col-md-offset-4 centered")
       div(class="form-group")
         label(for="movie-name") Movie Name
         input(id="movie-name", type="text", class="form-control", aria-describedby="movie-name-help", placeholder="Enter movie name")
@@ -27,7 +27,22 @@ body
           option SciFi
           opyion Bullshit
           option Other...
-        
+          
+      h3 Director  
       div(class="form-group")
-        label(for="director-name") Director Name
+        label(for="director-name") Director's Name
         input(id="director-name", type="text", class="form-control", placeholder="Enter director's name")
+      
+      div(class="form-group")
+        label(for="director-country") Director's nationality
+        select(class="form-control", id="director-country")
+          option Murican
+          option Spaniard
+          option Frenchie
+          option Hitlerian
+          option Stalinian
+          option UK-fagg
+          option Sweed
+          option Jap
+          option Unknown
+          
