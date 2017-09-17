@@ -25,8 +25,20 @@ body
           option Musical
           option Documental
           option SciFi
-          opyion Bullshit
+          option Bullshit
           option Other...
+          
+      div(class="form-group")
+        label(for="movie-country") Movie's country
+        select(class="form-control", id="movie-country", aria-describedby="movie-country-help")
+          option Murica
+          option Mexico
+          option France
+          option UK
+          option Spain
+          option FUCKING CHINA
+          option Others...
+        small(id="movie-country-help", class="form-text text-muted") Where da money from, bitch 💵
           
       h3 Director  
       div(class="form-group")
