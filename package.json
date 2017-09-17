@@ -1,0 +1,37 @@
+{
+  "name": "movie-rater",
+  "version": "0.0.1",
+  "description": "JSON movie rater",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stunny/movie-rater.git"
+  },
+  "keywords": [
+    "movie",
+    "rater",
+    "json",
+    "nodejs"
+  ],
+  "author": "Alex Vogel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stunny/movie-rater/issues"
+  },
+  "homepage": "https://github.com/Stunny/movie-rater#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "errorhandler": "^1.4.3",
+    "express": "latest",
+    "jsonwebtoken": "^7.1.6",
+    "method-override": "^2.3.6",
+    "mongoose": "latest",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "jstransformer": "latest"
+  }
+
+}
