@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 //--Middleware
+var pug = require("pug");
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -16,17 +17,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(morgan('dev'));
+app.set('view engine', 'pug');
+app.set("views", path.join(__dirname, "view"));
 
 app.use('/api', apiRoutes);
 
 
 //---Proves per a depuracio
 app.get('/', function(req, res){
-	res.send({serveraddress : require('./constants').SERVER_ADDRESS});
+	res.render("form");
 });
-
-//---Enrutamiento de la aplicacion
-require('./routes')(app, apiRoutes);
 
 //---Error handling
 
